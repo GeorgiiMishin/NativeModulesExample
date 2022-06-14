@@ -14,6 +14,10 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-NativeModulesExample-NativeModulesExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-NativeModulesExample-NativeModulesExampleTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		885D8DB9285938590089B187 /* SimpleTextViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885D8DB8285938590089B187 /* SimpleTextViewManager.swift */; };
+		885D8DBB285938690089B187 /* SimpleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885D8DBA285938690089B187 /* SimpleTextView.swift */; };
+		885D8DBD2859388A0089B187 /* SimpleTextViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 885D8DBC2859388A0089B187 /* SimpleTextViewManager.m */; };
+		885D8DBF28593CCE0089B187 /* SimpleTextShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885D8DBE28593CCE0089B187 /* SimpleTextShadowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,10 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-NativeModulesExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NativeModulesExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = NativeModulesExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		885D8DAE285935640089B187 /* NativeModulesExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NativeModulesExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		885D8DB8285938590089B187 /* SimpleTextViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTextViewManager.swift; sourceTree = "<group>"; };
+		885D8DBA285938690089B187 /* SimpleTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTextView.swift; sourceTree = "<group>"; };
+		885D8DBC2859388A0089B187 /* SimpleTextViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTextViewManager.m; sourceTree = "<group>"; };
+		885D8DBE28593CCE0089B187 /* SimpleTextShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTextShadowView.swift; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-NativeModulesExample-NativeModulesExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeModulesExample-NativeModulesExampleTests.release.xcconfig"; path = "Target Support Files/Pods-NativeModulesExample-NativeModulesExampleTests/Pods-NativeModulesExample-NativeModulesExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -87,6 +95,7 @@
 		13B07FAE1A68108700A75B9A /* NativeModulesExample */ = {
 			isa = PBXGroup;
 			children = (
+				885D8DB7285938400089B187 /* SimpleTextView */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -137,6 +146,17 @@
 				00E356EE1AD99517003FC87E /* NativeModulesExampleTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		885D8DB7285938400089B187 /* SimpleTextView */ = {
+			isa = PBXGroup;
+			children = (
+				885D8DB8285938590089B187 /* SimpleTextViewManager.swift */,
+				885D8DBA285938690089B187 /* SimpleTextView.swift */,
+				885D8DBC2859388A0089B187 /* SimpleTextViewManager.m */,
+				885D8DBE28593CCE0089B187 /* SimpleTextShadowView.swift */,
+			);
+			name = SimpleTextView;
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -412,6 +432,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				885D8DBD2859388A0089B187 /* SimpleTextViewManager.m in Sources */,
+				885D8DBF28593CCE0089B187 /* SimpleTextShadowView.swift in Sources */,
+				885D8DB9285938590089B187 /* SimpleTextViewManager.swift in Sources */,
+				885D8DBB285938690089B187 /* SimpleTextView.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
@@ -432,6 +456,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-NativeModulesExample-NativeModulesExampleTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -459,6 +484,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-NativeModulesExample-NativeModulesExampleTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = NativeModulesExampleTests/Info.plist;
